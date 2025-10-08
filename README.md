@@ -1,4 +1,5 @@
-## Hi there 👋
+## Hello World, welcome to the GitHub profile of cmathgit 👋
+GNU Bourne-Again SHell Programmer, Oracle Cloud Dev, Mathematics Tutor, and Computer Science Instructor. Following Jesus through computer science and AI/MMM technology. Content not intended for SEO-Spam/spamdexing/AI Slop or otherwise — solely to spread the Gospel of Jesus Christ through musicianship, art, technology, and media. For a Complete Limitation of Liability Statement [See Main Site](https://cmathgit.github.io)
 
 <!--
 **cmathgit/cmathgit** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
