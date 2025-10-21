@@ -47,7 +47,7 @@ Advancing **secure**, **cost-effective**, and **responsible** Generative AI thro
 
 A full-stack AI engineer specializing in **cost-optimized LLM deployment**, **RAG architecture**, and **agentic system design** recently developed **BibliVal**, a novel benchmark demonstrating that free LLM services enhanced with intelligent retrieval-augmented generation (RAG) can **match or exceed premium AI models** (GPT-5, Claude-4.5-Sonnet at \$20/month or $2.5-$3/$10-$15 per 1M I/O tokens) while maintaining **theological integrity** and **scholarly rigor**.
 
-**Key Achievement:** Engineered a **GLM-4.5-Flash + RAG pipeline** achieving **A+ performance at \$0.005/query vs. \$0.113-\$0.09/query (5K Tokens I/O)** (94.4% cost reduction vs. premium subscriptions), validating the viability of **free cloud LLMs + local embedding models** for enterprise-grade specialized tasks.
+**Key Achievement:** Engineered a **GLM-4.5-Flash + RAG pipeline** achieving **A+ performance at \$0.005/query vs. \$0.063-\$0.09/query (5K Tokens I/O)** (94.4% cost reduction vs. premium subscriptions), validating the viability of **free cloud LLMs + local embedding models** for enterprise-grade specialized tasks.
 
 ***
 
@@ -138,14 +138,14 @@ User Query → Perplexity Web Search (domain-filtered)
 - **Base LLM:** GLM-4.5-Flash (Z.AI free cloud API)
 - **Embedding:** Ollama Local (embeddinggemma:300m, all-minilm:22m)
 - **OCR:** Mistral OCR (local inference)
-- **Search:** Perplexity API (domain-constrained, \$0.005/query vs. $0.113-$0.09/query (5K Tokens I/O))
+- **Search:** Perplexity API (domain-constrained, \$0.005/query vs. $0.063-$0.09/query (5K Tokens I/O))
 - **Orchestration:** Python + REST API + LangChain
 
 
 #### **Key Findings**
 
 1. **Cost-Performance Validation:**
-    - **GLM-4.5-Flash + RAG:** A+ performance at \$0.005/query vs. $0.113-$0.09/query (5K Tokens I/O)
+    - **GLM-4.5-Flash + RAG:** A+ performance at \$0.005/query vs. $0.063-$0.09/query (5K Tokens I/O)
     - **GPT-5 (\$20/month):** B+ performance (underperformed free model)
     - **Claude-4.5-Sonnet (\$20/month):** A+ performance (tied with free model)
     - **Annual Savings:** \$240/user (ministry context) to \$119,460/year (500-user seminary)
