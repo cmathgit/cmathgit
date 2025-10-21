@@ -6,20 +6,7 @@ GNU Bourne-Again SHell Programmer, Oracle Cloud Developer, Mathematics Tutor, an
 ## **Oracle Integration & OCI Optimization**
 Design and support Integration solutions for Oracle Fusion Cloud Applications Suite—including Enterprise Resource Planning (ERP), Supply Chain & Manufacturing (SCM), and Human Capital Management (HCM)—via Oracle Integration Cloud (OIC). These integrations utilize various tech stacks, programming languages, connections, and tools with secure access to the organization’s ERP system and cloud databases. Technologies include: SFTP, SOAP, REST, SQLcl, ATP Databases, BI Publisher, PL/SQL, Java, and XML Schemas. Delivered multiple enterprise-grade solutions in Oracle Integration Cloud (OIC) and Oracle Cloud Infrastructure (OCI) integrating external healthcare systems with Oracle Fusion Cloud ERP. These projects showcase advanced skills in cloud-native integration, data staging, REST/SOAP APIs, and cost-efficient infrastructure management. 
 
-### 1. **Capital Budget Integration**  
-   - Designed to process capital budget data transferred from an external Healthcare EPM system into the Oracle ERP system.   
-   - Data received as a pipe delimited file via SFTP and processes using Oracle FBDI for Project Management.   
-   - Data staged using ATP newly created and uniquely tailored database tables, enriched via SOAP requests to the ERP, and formatted into an FBDI file for the Import Project Budgets job Oracle Fusion Project Control.  
-   - Data separated into CREATE, UPDATE, and DELETE control files as per Oracle recommendations. 
-   - Ingested budget data from via SFTP, staged in ATP, enriched through ERP SOAP services, and submitted using FBDI for Oracle Project Control. 
-   - Implemented CREATE/UPDATE/DELETE logic per Oracle standards. 
-
-### 2. **ASN Receiving Integration**  
-   - Designed to process Advanced Shipment Notice (ASN) Receiving data from an external system into the Oracle ERP system. 
-   - This integration ensures accurate and timely receipt of goods data into the ERP system, supporting supply chain operations. 
-   - Streamlined Advanced Shipment Notice data flow from external systems into Oracle ERP, enhancing supply chain visibility and operational accuracy. 
-
-### 3. **Invoice Order Integration**  
+### 1. **Invoice Order Integration**  
    - Designed to process and submit invoice order data transferred from an external Healthcare Supply Chain Management system into the Oracle ERP system. 
    - Data received as a zipped container via SFTP and imported using RESTful services. 
    - The container includes PDF attachments and a schema file listing filenames and associated invoice numbers. 
@@ -30,13 +17,26 @@ Design and support Integration solutions for Oracle Fusion Cloud Applications Su
    - Parsed zipped payloads from the external Healthcare Supply Chain Management system containing PDFs and schema files. 
    - Staged metadata in ATP, resolved invoice IDs via ERP REST APIs, and submitted attachment POST requests with dynamic payload construction and robust fault handling. 
 
-### 4. **OCI PaaS Optimization Project**  
+### 2. **OCI PaaS Optimization Project**  
    - Reduced infrastructure costs by optimizing the OCI PaaS configuration for lower environments.  
    - Minimizing uptime of non-production components. 
    - Reducing the number of active OIC Connectivity Agents in Test environments. 
    - Automating shutdown/startup schedules for OIC and ATP instances during off-hours. 
    - Maintaining DR environments in standby mode, activating only for production backups or disaster recovery events. 
    - These efforts significantly lowered compute costs while maintaining operational readiness. 
+
+### 3. **Capital Budget Integration**  
+   - Designed to process capital budget data transferred from an external Healthcare EPM system into the Oracle ERP system.   
+   - Data received as a pipe delimited file via SFTP and processes using Oracle FBDI for Project Management.   
+   - Data staged using ATP newly created and uniquely tailored database tables, enriched via SOAP requests to the ERP, and formatted into an FBDI file for the Import Project Budgets job Oracle Fusion Project Control.  
+   - Data separated into CREATE, UPDATE, and DELETE control files as per Oracle recommendations. 
+   - Ingested budget data from via SFTP, staged in ATP, enriched through ERP SOAP services, and submitted using FBDI for Oracle Project Control. 
+   - Implemented CREATE/UPDATE/DELETE logic per Oracle standards. 
+
+### 4. **ASN Receiving Integration**  
+   - Designed to process Advanced Shipment Notice (ASN) Receiving data from an external system into the Oracle ERP system. 
+   - This integration ensures accurate and timely receipt of goods data into the ERP system, supporting supply chain operations. 
+   - Streamlined Advanced Shipment Notice data flow from external systems into Oracle ERP, enhancing supply chain visibility and operational accuracy. 
 
 ## AI Engineering \& Optimization Specialist: BibliVal Benchmark \& Cost-Effective LLM Integration
 
