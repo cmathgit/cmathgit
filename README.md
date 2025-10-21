@@ -38,6 +38,8 @@ Design and support Integration solutions for Oracle Fusion Cloud Applications Su
    - This integration ensures accurate and timely receipt of goods data into the ERP system, supporting supply chain operations. 
    - Streamlined Advanced Shipment Notice data flow from external systems into Oracle ERP, enhancing supply chain visibility and operational accuracy. 
 
+***
+
 ## AI Engineering \& Optimization Specialist: BibliVal Benchmark \& Cost-Effective LLM Integration
 
 ### Philosophy:
