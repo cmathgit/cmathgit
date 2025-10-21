@@ -197,10 +197,9 @@ User Query → Perplexity Web Search (domain-filtered)
 
 
 #### **Development Stack**
-
-- **Languages:** Python (LangChain, FastAPI, REST), P.O.M.L. (prompt markup)
-- **APIs:** RESTful design, WebSocket streaming, async/await
-- **Infrastructure:** Private network deployment, containerization (Docker/python venv/uv), API gateway routing
+- **Languages:** Python (LangChain, FastAPI, REST), P.O.M.L., cURL
+- **Models:** Ollama, llama.cpp (GGUF models), Mistral OCR/Embed, Perplexity Search API, Z.AI API (GLM-4.5-Flash)
+- **Infrastructure:** RESTful API, WebSocket streaming, async/await, Private network deployment, containerization (Docker/python venv/uv)
 
 ***
 
