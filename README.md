@@ -200,7 +200,7 @@ User Query → Perplexity Web Search (domain-filtered)
 
 - **Languages:** Python (LangChain, FastAPI, REST), P.O.M.L. (prompt markup)
 - **APIs:** RESTful design, WebSocket streaming, async/await
-- **Infrastructure:** Private network deployment, containerization (Docker), API gateway routing
+- **Infrastructure:** Private network deployment, containerization (Docker/python venv/uv), API gateway routing
 
 ***
 
