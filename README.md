@@ -40,16 +40,23 @@ Design and support Integration solutions for Oracle Fusion Cloud Applications Su
 
 ***
 
-## AI Engineering \& Optimization Specialist: BibliVal Benchmark \& Cost-Effective LLM Integration
+## AI Engineering \& Optimization Specialist: BibleVal Benchmark \& Cost-Effective LLM Integration
+Deploying and configuring OpenWebUI on private networks with Multi-Agent Integration & SLM (RAG/Embedding) Clusters: GLM-4.5-Flash, Mistral OCR, Perplexity Search, and embeddinggemma:300m (GGUF) to integrate locally hosted small language models (SLMs) and cloud-based large language models (LLMs) within a unified architecture. 
 
 ### Philosophy:
 Advancing **secure**, **cost-effective**, and **responsible** Generative AI through retrieval-augmented generation, multi-agent orchestration, privacy-first prompting protocols, and open-source tooling. Dedicated to bridging AI engineering and security, with emphasis on adversarial robustness, confidential computing, and compliance-aware deployments across regulated domains.
 
 ### Executive Summary
 
-A full-stack AI engineer specializing in **cost-optimized LLM deployment**, **RAG architecture**, and **agentic system design** recently developed **BibliVal**, a novel benchmark demonstrating that free LLM services enhanced with intelligent retrieval-augmented generation (RAG) can **match or exceed premium AI models** (GPT-5, Claude-4.5-Sonnet at \$20/month or $2.5-$3/$10-$15 per 1M I/O tokens) while maintaining **theological integrity** and **scholarly rigor**.
+A full-stack AI engineer specializing in **cost-optimized LLM deployment**, **RAG architecture**, and **agentic system design** recently developed **BibleVal**, a novel benchmark demonstrating that free LLM services enhanced with intelligent retrieval-augmented generation (RAG) can **match or exceed premium AI models** (GPT-5, Claude-4.5-Sonnet at \$20/month or $2.5-$3/$10-$15 per 1M I/O tokens) while maintaining **theological integrity** and **scholarly rigor**.
 
-**Key Achievement:** Engineered a **GLM-4.5-Flash + RAG pipeline** achieving **A+ performance at \$0.005/query vs. \$0.063-\$0.09/query (5K Tokens I/O)** (94.4% cost reduction vs. premium subscriptions), validating the viability of **free cloud LLMs + local embedding models** for enterprise-grade specialized tasks.
+### Key Achievement: 
+Engineered a **GLM-4.5-Flash + RAG pipeline** achieving **A+ performance at \$0.005/query vs. \$0.063-\$0.09/query (5K Tokens I/O)** (94.4% cost reduction vs. premium subscriptions), validating the viability of **free cloud LLMs + local embedding models** for enterprise-grade specialized tasks.
+
+### Development Stack 
+Languages: Python (LangChain, FastAPI, REST), P.O.M.L., cURL 
+Models: Ollama, llama.cpp (GGUF models), Mistral OCR/Embed, Perplexity Search API, Z.AI API (GLM-4.5-Flash) 
+Infrastructure: RESTful API, WebSocket streaming, async/await, Private network deployment, containerization (Docker/python venv/uv) 
 
 ***
 
@@ -65,7 +72,7 @@ A full-stack AI engineer specializing in **cost-optimized LLM deployment**, **RA
 
 #### **2. RAG Architecture \& Embedding Optimization**
 
-- **BibliVal Case Study:** Designed and deployed domain-specific RAG pipeline for biblical exegesis:
+- **BibleVal Case Study:** Designed and deployed domain-specific RAG pipeline for biblical exegesis:
     - **Search Layer:** Perplexity API with domain filtering (biblegateway.com, biblehub.com, gotquestions.org)
     - **OCR Integration:** Mistral OCR for PDF/image text extraction
     - **Embedding Models:** Evaluated and optimized local embedding models (all-minilm:22m, embeddinggemma:300m, qwen3-embedding:0.6b), identifying **embedding bias** as critical factor in theological output quality
@@ -115,7 +122,7 @@ A full-stack AI engineer specializing in **cost-optimized LLM deployment**, **RA
 
 ***
 
-### Recent Project: BibliVal Benchmark
+### Recent Project: BibleVal Benchmark
 
 #### **Objective**
 
@@ -215,7 +222,7 @@ User Query → Perplexity Web Search (domain-filtered)
 
 #### **Domain Expertise**
 
-- **Specialized Benchmarks:** BibliVal framework adaptable to other domains (legal, medical, academic research)
+- **Specialized Benchmarks:** BibleVal framework adaptable to other domains (legal, medical, academic research)
 - **Embedding Bias Detection:** Experience identifying and mitigating embedding model biases in RAG pipelines
 - **Confessional/Compliance Alignment:** Ensuring AI outputs meet regulatory or doctrinal standards
 
