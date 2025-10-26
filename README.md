@@ -25,7 +25,7 @@ Design and support Integration solutions for Oracle Fusion Cloud Applications Su
    - Maintaining DR environments in standby mode, activating only for production backups or disaster recovery events. 
    - These efforts significantly lowered compute costs while maintaining operational readiness. 
 
-### 3. **Capital Budget Integration**  
+### 3. **Capital Budget Integration** 
    - Designed to process capital budget data transferred from an external Healthcare EPM system into the Oracle ERP system.   
    - Data received as a pipe delimited file via SFTP and processes using Oracle FBDI for Project Management.   
    - Data staged using ATP newly created and uniquely tailored database tables, enriched via SOAP requests to the ERP, and formatted into an FBDI file for the Import Project Budgets job Oracle Fusion Project Control.  
@@ -38,7 +38,7 @@ Design and support Integration solutions for Oracle Fusion Cloud Applications Su
    - This integration ensures accurate and timely receipt of goods data into the ERP system, supporting supply chain operations. 
    - Streamlined Advanced Shipment Notice data flow from external systems into Oracle ERP, enhancing supply chain visibility and operational accuracy. 
 
-### 5. OCI Generative AI \& OOracle AI Vector Search
+### 5. OCI Generative AI \& Oracle AI Vector Search
 TBD
 
 ***
