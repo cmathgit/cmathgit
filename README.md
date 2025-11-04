@@ -43,8 +43,23 @@ TBD
 
 ***
 
+## Preferred DIY Model-Stack(s): 
+ -Cloud
+    -Base Model(s) Chat: [GLM-4.5-Flash](https://docs.z.ai/guides/overview/pricing), [Magistral-Small](https://docs.mistral.ai/models/magistral-small-1-2-25-09), [Mistral-Nemo-12B](https://docs.mistral.ai/models/mistral-nemo-12b-24-07), [Cohere-Command-R-7B](https://docs.cohere.com/docs/command-r7b), [Groq-GPT-OSS-20B](https://console.groq.com/docs/model/openai/gpt-oss-20b), [Gemini-2.5-Flash](https://cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash#2.5-flash)
+    -Base Model(s) Code: [Devstral-Small](https://docs.mistral.ai/models/devstral-small-1-1-25-07)
+    -Web Search Model: [Perplexity Search API](https://docs.perplexity.ai/guides/search-quickstart), [Groq-Compound-Mini](https://console.groq.com/docs/compound/systems/compound-mini)
+    -OCR Model: [Mistral OCR](https://docs.mistral.ai/capabilities/document_ai/basic_ocr)
+    -Embedding Model: [Cohere-Embed](https://docs.cohere.com/docs/cohere-embed), [Codestral-Embed](https://docs.mistral.ai/models/codestral-embed-25-05), [Mistral-Embed](https://docs.mistral.ai/models/mistral-embed-23-12)
+    -Reranking Model: [Cohere-Rerank](https://docs.cohere.com/docs/rerank)
+ -Local
+    -Base Model(s) Chat: [LiquidAI/LFM2-8B-A1B-GGUF](https://huggingface.co/LiquidAI/LFM2-8B-A1B-GGUF), [google/gemma-7b-GGUF](https://huggingface.co/google/gemma-7b-GGUF)
+    -Base Model(s) Code: [google/codegemma-7b-GGUFp](https://huggingface.co/google/codegemma-7b-GGUF), [LiquidAI/LFM2-1.2B-Tool-GGUF](https://huggingface.co/LiquidAI/LFM2-1.2B-Tool-GGUF), [LiquidAI/LFM2-350M-Math-GGUF](https://huggingface.co/LiquidAI/LFM2-350M-Math-GGUF)
+    -RAG Local Model: [LiquidAI/LFM2-1.2B-RAG-GGUF](https://huggingface.co/LiquidAI/LFM2-1.2B-RAG-GGUF)
+    -Embedding Model: [leliuga/all-MiniLM-L12-v2-GGUF](https://huggingface.co/leliuga/all-MiniLM-L12-v2-GGUF), [LiquidAI/LFM2-1.2B-Extract](https://huggingface.co/LiquidAI/LFM2-1.2B-Extract)
+    -Reranking Model: [gpustack/bge-reranker-v2-m3-GGUF](https://huggingface.co/gpustack/bge-reranker-v2-m3-GGUF)
+
 ## Generative AI Full-Stack Engineering \& Optimization Specialist: BibleVal Benchmark \& Cost-Effective LLM Integration
-Deploying and configuring OpenWebUI on private networks with Multi-Agent Integration & SLM (RAG/Embedding) Clusters: GLM-4.5-Flash, Mistral OCR, Perplexity Search, and embeddinggemma:300m (GGUF) to integrate locally hosted small language models (SLMs) and cloud-based large language models (LLMs) within a unified architecture. 
+Deploying and configuring OpenWebUI on private networks with Multi-Agent Integration & SLM (RAG/Embedding) Clusters: GLM-4.5-Flash, Perplexity Search, Mistral OCR, and embeddinggemma:300m (GGUF) to integrate locally hosted small language models (SLMs) and cloud-based large language models (LLMs) within a unified architecture. 
 
 ### Philosophy:
 Generative AI Full-stack engineering specializing in **cost-optimized LLM deployment**, **RAG architecture**, and **agentic system design**. Advancing **secure**, **cost-effective**, and **responsible** Generative AI through retrieval-augmented generation, multi-agent orchestration, privacy-first prompting protocols, and open-source tooling. Dedicated to bridging AI engineering and security, with emphasis on adversarial robustness, confidential computing, and compliance-aware deployments across regulated domains.
