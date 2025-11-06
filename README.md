@@ -66,20 +66,37 @@ TBD
 #### Reranking Model: 
 - [Cohere-Rerank](https://docs.cohere.com/docs/rerank)
 ### Local
-#### Base Model(s) Chat: 
+#### Base Model(s) Chat:
+GGUF Models hosted on Llama.cpp servers (Vulkan release) via HuggingFace repos or Ollama on NVIDIA RTX 5070 TI GPU (12GB VRAM)
 - [LiquidAI/LFM2-8B-A1B-GGUF](https://huggingface.co/LiquidAI/LFM2-8B-A1B-GGUF)
 - [google/gemma-7b-GGUF](https://huggingface.co/google/gemma-7b-GGUF)
+- [command-r7b:7b](https://ollama.com/library/command-r7b)
+- [gemma3:12b](https://ollama.com/library/gemma3)
+- [deepseek-r1:8b](https://ollama.com/library/deepseek-r1)
+- [qwen3:8b](https://ollama.com/library/qwen3)
+- [llama3.1:8b](https://ollama.com/library/llama3.1)
 #### Base Model(s) Code:
+GGUF Models hosted on Llama.cpp servers (Vulkan release) via HuggingFace repos or Ollama on NVIDIA RTX 5070 TI GPU (12GB VRAM)
 - [google/codegemma-7b-GGUFp](https://huggingface.co/google/codegemma-7b-GGUF)
 - [LiquidAI/LFM2-1.2B-Tool-GGUF](https://huggingface.co/LiquidAI/LFM2-1.2B-Tool-GGUF)
 - [LiquidAI/LFM2-350M-Math-GGUF](https://huggingface.co/LiquidAI/LFM2-350M-Math-GGUF)
+- [codegemma:7b](https://ollama.com/library/codegemma)
+- [deepcoder:14b](https://ollama.com/library/deepcoder)
 #### RAG Local Model:
+GGUF Models hosted on Llama.cpp servers (CPU release) via HuggingFace repos on Intel® Core™ Ultra 9 275HX Processor CPU (16 Core)
 - [LiquidAI/LFM2-1.2B-RAG-GGUF](https://huggingface.co/LiquidAI/LFM2-1.2B-RAG-GGUF)
 #### Embedding Model: 
+GGUF Models hosted on Llama.cpp servers (CPU release) via HuggingFace repos on Intel® Core™ Ultra 9 275HX Processor CPU (16 Core)
 - [leliuga/all-MiniLM-L12-v2-GGUF](https://huggingface.co/leliuga/all-MiniLM-L12-v2-GGUF)
 - [LiquidAI/LFM2-1.2B-Extract](https://huggingface.co/LiquidAI/LFM2-1.2B-Extract)
+- [embeddinggemma:300m](https://huggingface.co/unsloth/embeddinggemma-300m-GGUF)
+- [all-MiniLM-L6-v2:22m](https://huggingface.co/leliuga/all-MiniLM-L6-v2-GGUF)
+- [all-minilm:33m](https://ollama.com/library/all-minilm)
 #### Reranking Model:
+GGUF Models hosted on Llama.cpp servers (CPU release) via HuggingFace repos on Intel® Core™ Ultra 9 275HX Processor CPU (16 Core)
 - [gpustack/bge-reranker-v2-m3-GGUF](https://huggingface.co/gpustack/bge-reranker-v2-m3-GGUF)
+- [bge-reranker-v2-m3:600m](https://huggingface.co/gpustack/bge-reranker-v2-m3-GGUF)
+- [bge-m3:567m](https://ollama.com/library/bge-m3)
 
 ## Generative AI Full-Stack Engineering \& Optimization Specialist: BibleVal Benchmark \& Cost-Effective LLM Integration
 Deploying and configuring OpenWebUI on private networks with Multi-Agent Integration & SLM (RAG/Embedding) Clusters: GLM-4.5-Flash, Perplexity Search, Mistral OCR, and embeddinggemma:300m (GGUF) to integrate locally hosted small language models (SLMs) and cloud-based large language models (LLMs) within a unified architecture. 
