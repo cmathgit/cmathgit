@@ -38,7 +38,15 @@ Design and support Integration solutions for Oracle Fusion Cloud Applications Su
    - This integration ensures accurate and timely receipt of goods data into the ERP system, supporting supply chain operations. 
    - Streamlined Advanced Shipment Notice data flow from external systems into Oracle ERP, enhancing supply chain visibility and operational accuracy. 
 
-### 5. OCI Generative AI \& Oracle AI Vector Search
+### 5. **Surgical Case Management & Clinical Procurement Integration**
+   - Designed to process and synchronize requisition data from the External EMR System platform into Oracle ERP and extract item master and PO return data from ERP to External EMR System.
+   - Requisition files received via SFTP, staged in ATP tables, enriched with ERP item and pricing data, and submitted to ERP for PO creation using REST APIs or FBDI.
+   - Item master and PO return files extracted from ERP using BI Publisher and Fusion Cloud ERP SCM tables, formatted as pipe-delimited CSV, and delivered to External EMR System for contract compliance and reconciliation.
+   - Implemented automated scheduling for hourly and nightly processes, SOC 2 security standards, and robust fault handling for all integrations.
+   - Staged inbound requisition data in ATP, enriched with ERP references, and synchronized outbound item master and PO lifecycle data between ERP and External EMR System.
+   - Worked cohesively with case schedule, case usage, and contract price data managed by EMR and other source systems within the External EMR System platform to ensure complete surgical case and procurement workflows.
+
+### 6. OCI Generative AI \& Oracle AI Vector Search
 TBD
 
 ***
