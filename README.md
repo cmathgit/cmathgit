@@ -51,7 +51,7 @@ TBD
 
 ***
 
-## Preferred DIY Model-Stack(s): 
+## Preferred DIY Language Model-Stack(s): 
 ### Cloud
 #### Base Model(s) Chat: 
 - [GLM-4.5-Flash](https://docs.z.ai/guides/overview/pricing)
