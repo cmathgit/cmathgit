@@ -1,6 +1,8 @@
 # Hello World, welcome to the GitHub profile of cmathgit 👋
 GNU Bourne-Again SHell Programmer, Oracle Cloud Developer, Mathematics Tutor, and Computer Science Instructor. Following Jesus by studying and understanding the bible through application programming, music composition, and AI/MMM integration. Content not intended for SEO-Spam/spamdexing/AI Slop or otherwise — solely to spread the Gospel of Jesus Christ through musicianship, art, technology, and media. For a Complete Limitation of Liability Statement [See Main Site](https://cmathgit.github.io)
 
+***
+
 # Recent Projects & Notable Accomplishments
 
 ## **OpenWebUI & and Local LLM Deployment/Integration**
@@ -117,7 +119,7 @@ GGUF Models hosted on Llama.cpp servers (Vulkan release) via HuggingFace repos o
 - [LiquidAI/LFM2-350M-Math-GGUF](https://huggingface.co/LiquidAI/LFM2-350M-Math-GGUF)
 - [codegemma:7b](https://ollama.com/library/codegemma)
 - [deepcoder:1.5b](https://ollama.com/library/deepcoder)
-- [deepseek-coder:7b](https://ollama.com/library/deepseek-coder)
+- [deepseek-coder:6.7b](https://ollama.com/library/deepseek-coder)
 - [llama3-groq-tool-use:8b](https://ollama.com/library/llama3-groq-tool-use)
 - [qwen2.5-coder:7b](https://ollama.com/library/qwen2.5-coder)
 #### RAG Local Model:
@@ -135,6 +137,8 @@ GGUF Models hosted on Llama.cpp servers (CPU release) via HuggingFace repos on I
 - [gpustack/bge-reranker-v2-m3-GGUF](https://huggingface.co/gpustack/bge-reranker-v2-m3-GGUF)
 - [bge-reranker-v2-m3:600m](https://huggingface.co/gpustack/bge-reranker-v2-m3-GGUF)
 - [bge-m3:567m](https://ollama.com/library/bge-m3)
+
+***
 
 ## Generative AI Full-Stack Engineering \& Optimization Specialist: BibleVal Benchmark \& Cost-Effective LLM Integration
 Deploying and configuring OpenWebUI on private networks with Multi-Agent Integration & SLM (RAG/Embedding) Clusters: GLM-4.5-Flash, Perplexity Search, Mistral OCR, and embeddinggemma:300m (GGUF) to integrate locally hosted small language models (SLMs) and cloud-based large language models (LLMs) within a unified architecture. 
