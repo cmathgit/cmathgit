@@ -3,6 +3,14 @@ GNU Bourne-Again SHell Programmer, Oracle Cloud Developer, Mathematics Tutor, an
 
 # Recent Projects & Notable Accomplishments
 
+## **OpenWebUI & and Local LLM Deployment/Integration**
+Maintaining and expanding the OpenWebUI platform for Generative AI web integration, locally hosted small language models (SLMs) and cloud-based large language models (LLMs) via a unified architecture. See my preferred DIY Language Model-Stack(s) below which include RAG/Embedding models, web search tools, OCR, and reranking models. Key components include: 
+- **Models/Tools**: Integrated diverse models (e.g., GLM, Mistral, Perplexity, GGUF) and tools (llama.cpp, Ollama, LMStudio, LangChain) with custom middleware.  
+- **Stack**: Python (FastAPI, REST), cURL, WebSocket streaming, async/await, Docker, and Python venv/uv.  
+- **Features**: Retrieval-augmented generation (RAG), embedding, reranking pipelines, Model Context Protocol (MCP) servers, multi-agent systems, and privacy-preserving protocols like Role-Pseudonymous Prompting (RPP).  
+- **Benchmarks**: Achieved parity with commercial models at significantly lower costs (up to 94.4% reduction) in domain-specific benchmarks, validating scalable and enterprise-grade performance.  
+- **Applications**: Optimized for specialized contexts (e.g., research, analysis), ensuring secure, compliant, and cost-efficient generative AI architectures.  
+
 ## **Oracle Integration & OCI Optimization**
 Design and support Integration solutions for Oracle Fusion Cloud Applications Suite—including Enterprise Resource Planning (ERP), Supply Chain & Manufacturing (SCM), and Human Capital Management (HCM)—via Oracle Integration Cloud (OIC). These integrations utilize various tech stacks, programming languages, connections, and tools with secure access to the organization’s ERP system and cloud databases. Technologies include: SFTP, SOAP, REST, SQLcl, ATP Databases, BI Publisher, PL/SQL, Java, and XML Schemas. Delivered multiple enterprise-grade solutions in Oracle Integration Cloud (OIC) and Oracle Cloud Infrastructure (OCI) integrating external healthcare systems with Oracle Fusion Cloud ERP. These projects showcase advanced skills in cloud-native integration, data staging, REST/SOAP APIs, and cost-efficient infrastructure management. 
 
@@ -52,8 +60,22 @@ TBD
 ***
 
 ## Preferred DIY Language Model-Stack(s): 
+
+### Platform Integration
+- [OpenWebUI](https://github.com/open-webui/open-webui/releases)
+- [Continue](https://github.com/continuedev/continue/releases)
+- [Ollama](https://github.com/ollama/ollama/releases)
+- [llama.cpp](https://github.com/ggml-org/llama.cpp/releases)
+
+### My Profiles
+- [HuggingFace](https://huggingface.co/cmathhug)
+- [Continue](https://hub.continue.dev/cmathcontinue-dev)
+- [Ollama](https://ollama.com/cmathllm)
+- [OpenWebUI](https://openwebui.com/u/cmathopen)
+
 ### Cloud
-#### Base Model(s) Chat: 
+
+#### Instruct Model(s) Chat: 
 - [GLM-4.5-Flash](https://docs.z.ai/guides/overview/pricing)
 - [Magistral-Small](https://docs.mistral.ai/models/magistral-small-1-2-25-09)
 - [Mistral-Nemo-12B](https://docs.mistral.ai/models/mistral-nemo-12b-24-07)
@@ -73,23 +95,31 @@ TBD
 - [Mistral-Embed](https://docs.mistral.ai/models/mistral-embed-23-12)
 #### Reranking Model: 
 - [Cohere-Rerank](https://docs.cohere.com/docs/rerank)
+
 ### Local
-#### Base Model(s) Chat:
+
+#### Instruct Model(s) Chat:
 GGUF Models hosted on Llama.cpp servers (Vulkan release) via HuggingFace repos or Ollama on NVIDIA RTX 5070 TI GPU (12GB VRAM)
 - [LiquidAI/LFM2-8B-A1B-GGUF](https://huggingface.co/LiquidAI/LFM2-8B-A1B-GGUF)
 - [google/gemma-7b-GGUF](https://huggingface.co/google/gemma-7b-GGUF)
 - [command-r7b:7b](https://ollama.com/library/command-r7b)
-- [gemma3:12b](https://ollama.com/library/gemma3)
+- [gemma3:4b](https://ollama.com/library/gemma3)
 - [deepseek-r1:8b](https://ollama.com/library/deepseek-r1)
 - [qwen3:8b](https://ollama.com/library/qwen3)
 - [llama3.1:8b](https://ollama.com/library/llama3.1)
+- [mistral:7b](https://ollama.com/library/mistral)
+- [dolphin3:8b](https://ollama.com/library/dolphin3)
+- [dolphin-llama3:8b](https://ollama.com/library/dolphin-llama3)
 #### Base Model(s) Code:
 GGUF Models hosted on Llama.cpp servers (Vulkan release) via HuggingFace repos or Ollama on NVIDIA RTX 5070 TI GPU (12GB VRAM)
 - [google/codegemma-7b-GGUFp](https://huggingface.co/google/codegemma-7b-GGUF)
 - [LiquidAI/LFM2-1.2B-Tool-GGUF](https://huggingface.co/LiquidAI/LFM2-1.2B-Tool-GGUF)
 - [LiquidAI/LFM2-350M-Math-GGUF](https://huggingface.co/LiquidAI/LFM2-350M-Math-GGUF)
 - [codegemma:7b](https://ollama.com/library/codegemma)
-- [deepcoder:14b](https://ollama.com/library/deepcoder)
+- [deepcoder:1.5b](https://ollama.com/library/deepcoder)
+- [deepseek-coder:7b](https://ollama.com/library/deepseek-coder)
+- [llama3-groq-tool-use:8b](https://ollama.com/library/llama3-groq-tool-use)
+- [qwen2.5-coder:7b](https://ollama.com/library/qwen2.5-coder)
 #### RAG Local Model:
 GGUF Models hosted on Llama.cpp servers (CPU release) via HuggingFace repos on Intel® Core™ Ultra 9 275HX Processor CPU (16 Core)
 - [LiquidAI/LFM2-1.2B-RAG-GGUF](https://huggingface.co/LiquidAI/LFM2-1.2B-RAG-GGUF)
