@@ -5,7 +5,7 @@ GNU Bourne-Again SHell Programmer, Oracle Cloud Developer, Mathematics Tutor, an
 
 # Recent Projects & Notable Accomplishments
 
-## **OpenWebUI & and Local LLM Deployment/Integration**
+## **OpenWebUI Deployment & Local Language Model Integration**
 Maintaining and expanding the OpenWebUI platform for Generative AI web integration, locally hosted small language models (SLMs) and cloud-based large language models (LLMs) via a unified architecture. See my preferred DIY Language Model-Stack(s) below which include RAG/Embedding models, web search tools, OCR, and reranking models. Key components include: 
 - **Models/Tools**: Integrated diverse models (e.g., GLM, Mistral, Perplexity, GGUF) and tools (llama.cpp, Ollama, LMStudio, LangChain) with custom middleware.  
 - **Stack**: Python (FastAPI, REST), cURL, WebSocket streaming, async/await, Docker, and Python venv/uv.  
@@ -66,13 +66,13 @@ TBD
 
 ## Preferred DIY Language Model-Stack(s): 
 
-### Platform Integration
+### Platform Integrations:
 - [OpenWebUI](https://github.com/open-webui/open-webui/releases)
 - [Continue](https://github.com/continuedev/continue/releases)
 - [Ollama](https://github.com/ollama/ollama/releases)
 - [llama.cpp](https://github.com/ggml-org/llama.cpp/releases)
 
-### My Profiles
+### My Profiles:
 - [HuggingFace](https://huggingface.co/cmathhug)
 - [Continue](https://hub.continue.dev/cmathcontinue-dev)
 - [Ollama](https://ollama.com/cmathllm)
