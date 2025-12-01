@@ -3,7 +3,7 @@ GNU Bourne-Again SHell Programmer, Oracle Cloud Developer, Mathematics Tutor, an
 
 ***
 
-# Recent Projects & Notable Accomplishments
+# Recent/Upcoming Projects & Notable Accomplishments
 
 ## **OpenWebUI Deployment & Local Language Model Integration**
 Maintaining and expanding the OpenWebUI platform for Generative AI web integration, locally hosted small language models (SLMs) and cloud-based large language models (LLMs) via a unified architecture. See my preferred DIY Language Model-Stack(s) below which include RAG/Embedding models, web search tools, OCR, and reranking models. Key components include: 
@@ -16,7 +16,7 @@ Maintaining and expanding the OpenWebUI platform for Generative AI web integrati
 - **Benchmarks**: Achieved parity with commercial models at significantly lower costs (up to 94.4% reduction) in domain-specific benchmarks, validating scalable and enterprise-grade performance.  
 - **Applications**: Optimized for specialized contexts (e.g., research, analysis), ensuring secure, compliant, and cost-efficient generative AI architectures.  
 
-## **Oracle Integration & OCI Optimization**
+## **Oracle Integration Cloud & Oracle Cloud Infrastructure Optimization**
 Design and support Integration solutions for Oracle Fusion Cloud Applications Suite—including Enterprise Resource Planning (ERP), Supply Chain & Manufacturing (SCM), and Human Capital Management (HCM)—via Oracle Integration Cloud (OIC). These integrations utilize various tech stacks, programming languages, connections, and tools with secure access to the organization’s ERP system and cloud databases. Technologies include: SFTP, SOAP, REST, SQLcl, ATP Databases, BI Publisher, PL/SQL, Java, and XML Schemas. Delivered multiple enterprise-grade solutions in Oracle Integration Cloud (OIC) and Oracle Cloud Infrastructure (OCI) integrating external healthcare systems with Oracle Fusion Cloud ERP. These projects showcase advanced skills in cloud-native integration, data staging, REST/SOAP APIs, and cost-efficient infrastructure management. 
 
 ### 1. **Invoice Order Integration**  
@@ -30,6 +30,11 @@ Design and support Integration solutions for Oracle Fusion Cloud Applications Su
    - Parsed zipped payloads from the external Healthcare Supply Chain Management system containing PDFs and schema files. 
    - Staged metadata in ATP, resolved invoice IDs via ERP REST APIs, and submitted attachment POST requests with dynamic payload construction and robust fault handling. 
 
+#### Planned Enhancement(s): [Oracle Generative AI Implementation](https://docs.oracle.com/en-us/iaas/Content/generative-ai/overview.htm)
+   - Implement a document understanding pipeline that uses [Pretrained Foundational Model Cohere Command R](https://docs.oracle.com/en-us/iaas/Content/generative-ai/cohere-models.htm) to perform OCR and semantic extraction on non-standard invoice PDFs that fail initial schema parsing, automatically identifying fields like "Total Amount," "Vendor Name," and "Invoice Date" to reduce manual exception handling.
+   - Utilize a fine-tuned [Imported Model Llama-4-Maverick-17B-128E-Instruct-FP8](https://docs.oracle.com/en-us/iaas/Content/generative-ai/imported-meta-models.htm) model to analyze extracted invoice line items against historical pricing data stored in ATP. The model flags "hallucinated" or mismatched prices (e.g., a 500% variance in surgical supply costs) before the invoice is posted to Oracle ERP Financials, adding a layer of fraud detection.
+   - Use OCI Generative AI Embeddings to convert invoice descriptions into vectors. When a new invoice arrives with an ambiguous "Service Description," the system queries the vector database to find the most similar past invoices and automatically assigns the correct General Ledger (GL) code with 95% accuracy.
+
 ### 2. **OCI PaaS Optimization Project**  
    - Reduced infrastructure costs by optimizing the OCI PaaS configuration for lower environments.  
    - Minimizing uptime of non-production components. 
@@ -37,6 +42,11 @@ Design and support Integration solutions for Oracle Fusion Cloud Applications Su
    - Automating shutdown/startup schedules for OIC and ATP instances during off-hours. 
    - Maintaining DR environments in standby mode, activating only for production backups or disaster recovery events. 
    - These efforts significantly lowered compute costs while maintaining operational readiness. 
+
+#### Planned Enhancement(s): [Oracle Generative AI Implementation](https://docs.oracle.com/en-us/iaas/Content/generative-ai/overview.htm)
+   - Integrate an OCI DevOps pipeline where [Imported Model GPT-OSS 120B](https://docs.oracle.com/en-us/iaas/Content/generative-ai/openai-gpt-oss-120b.htm) analyzes Terraform state files and suggests resource rightsizing opportunities (e.g., "Downgrade Block Volume from High Performance to Balanced") based on usage logs, automatically generating Pull Requests for approval.
+   - Deploy a [Pretrained Foundational Model Gemini-2.5-Pro](https://docs.oracle.com/en-us/iaas/Content/generative-ai/google-models.htm) powered agent to digest massive OCI Audit Logs during off-hours. Instead of just shutting down instances, the agent generates a "Daily Cost & Usage Report" that summarizes why specific compute instances spun up (e.g., "Auto-scaling triggered by 2 AM backup job"), providing granular visibility into cost drivers.
+   - Implement a predictive model using [Pretrained Foundational Model Cohere Embed 4](https://docs.oracle.com/en-us/iaas/Content/generative-ai/cohere-models.htm) to analyze historical CPU/Memory utilization patterns. The system now proactively warms up OIC Connectivity Agents 15 minutes before predicted traffic spikes (e.g., month-end close), rather than reacting to load, balancing cost savings with performance.
 
 ### 3. **Capital Budget Integration** 
    - Designed to process capital budget data transferred from an external Healthcare EPM system into the Oracle ERP system.   
@@ -46,10 +56,21 @@ Design and support Integration solutions for Oracle Fusion Cloud Applications Su
    - Ingested budget data from via SFTP, staged in ATP, enriched through ERP SOAP services, and submitted using FBDI for Oracle Project Control. 
    - Implemented CREATE/UPDATE/DELETE logic per Oracle standards. 
 
+#### Planned Enhancement(s): [Oracle Generative AI Implementation](https://docs.oracle.com/en-us/iaas/Content/generative-ai/overview.htm)
+   - When budget line items are "Rejected" by Oracle ERP due to insufficient funds, a [Pretrained Foundational Model Meta Llama 3.1 70B](https://docs.oracle.com/en-us/iaas/Content/generative-ai/meta-models.htm) model analyzes the rejection error and the original project proposal. It then auto-generates a "Budget Adjustment Request" email for the project manager, explaining exactly how much to reduce or reallocate to meet the cap, streamlining the approval loop.
+   - Before creating a new Capital Project in ERP, the system uses [Oracle AI Vector Search](https://docs.oracle.com/en/database/oracle/oracle-database/26/nfcoa/vector-data-type.html) to compare the incoming project description against 5 years of historical projects. It alerts Finance if a duplicate or highly similar project already exists (e.g., "MRI Machine Upgrade 2024" vs. "Radiology Equipment Refresh"), preventing double-booking of capital funds.
+   - Build a "Budget Chat" interface for executives using [Pretrained Foundational Model xAI Grok 3](https://docs.oracle.com/en-us/iaas/Content/generative-ai/xai-models.htm) since it excels at enterprise use cases such as data extraction, coding, and summarizing text, and has a deep domain knowledge in finance, healthcare, law, and science. Users can ask, "Show me all capital projects over $50k in Cardiology that are pending approval," and the model translates this natural language into precise SQL queries against the ATP staging tables, returning real-time results without IT intervention.
+
 ### 4. **ASN Receiving Integration**  
    - Designed to process Advanced Shipment Notice (ASN) Receiving data from an external system into the Oracle ERP system. 
    - This integration ensures accurate and timely receipt of goods data into the ERP system, supporting supply chain operations. 
    - Streamlined Advanced Shipment Notice data flow from external systems into Oracle ERP, enhancing supply chain visibility and operational accuracy. 
+
+#### Planned Enhancement(s): [Oracle Generative AI Implementation](https://docs.oracle.com/en-us/iaas/Content/generative-ai/overview.htm)
+   - Integrate [Pretrained Foundational Model Gemini-2.5-Flash](https://docs.oracle.com/en-us/iaas/Content/generative-ai/google-models.htm) to cross-reference incoming ASN vendor locations with real-time global news feeds. If an ASN originates from a region with active disruptions (e.g., "Port Strike in LA" or "Severe Weather in Texas"), the system tags the receipt as "High Risk for Delay" in Oracle ERP, enabling proactive inventory planning.
+   - When incoming ASNs use vendor-specific part numbers that don't perfectly match Oracle Item Masters, [Pretrained Foundational Model Cohere Rerank 3.5](https://docs.oracle.com/en-us/iaas/Content/generative-ai/cohere-models.htm) takes the vendor's description and ranks the top 5 most likely internal Item IDs. This allows the integration to auto-correct minor naming discrepancies (e.g., "Srgcl Mask" vs. "Mask, Surgical") without human review.
+   - Develope a specialized agent using [Imported Model Qwen3-14B](https://docs.oracle.com/en-us/iaas/Content/generative-ai/imported-alibaba-models.htm) that monitors the "Receipt Advice" interface. When a quantity discrepancy occurs (e.g., ASN says 100, Dock received 90), the agent auto-drafts a formatted claim email to the vendor referencing the specific PO and ASN line, attaching the discrepancy report instantly.
+
 
 ### 5. **Surgical Case Management & Clinical Procurement Integration**
    - Designed to process and synchronize requisition data from the External EMR System platform into Oracle ERP and extract item master and PO return data from ERP to External EMR System.
@@ -58,6 +79,11 @@ Design and support Integration solutions for Oracle Fusion Cloud Applications Su
    - Implemented automated scheduling for hourly and nightly processes, SOC 2 security standards, and robust fault handling for all integrations.
    - Staged inbound requisition data in ATP, enriched with ERP references, and synchronized outbound item master and PO lifecycle data between ERP and External EMR System.
    - Worked cohesively with case schedule, case usage, and contract price data managed by EMR and other source systems within the External EMR System platform to ensure complete surgical case and procurement workflows.
+
+#### Planned Enhancement(s): [Oracle Generative AI Implementation](https://docs.oracle.com/en-us/iaas/Content/generative-ai/overview.htm)
+   - Utilize [Pretrained Foundational Model Meta Llama 3 70B](https://docs.oracle.com/en-us/iaas/Content/generative-ai/imported-meta-models.htm) to analyze surgeon preference cards against actual usage data from the EMR. The model identifies items that are consistently opened but unused (waste) and suggests specific quantity reductions to the "Standard Order" set, directly reducing clinical procurement costs.
+   - When a specific surgical item is backordered in Oracle ERP, the system uses [Oracle AI Vector Search](https://docs.oracle.com/en/database/oracle/oracle-database/26/nfcoa/vector-data-type.html) to identify clinically equivalent substitutes based on product specifications (material, size, usage class). It pushes these "Approved Alternates" back to the EMR so surgeons can swap items immediately without delaying procedures.
+   - A [Cohere Command R+ 08-2024](https://docs.oracle.com/en-us/iaas/Content/generative-ai/cohere-models.htm) powered agent scans every outgoing Purchase Order against the "Contract Price" file from the EMR. If the ERP price exceeds the contracted rate, the agent holds the PO and highlights the specific clause in the contract PDF that guarantees the lower price, empowering procurement to enforce vendor compliance.
 
 ### 6. OCI Generative AI \& Oracle AI Vector Search
 TBD
