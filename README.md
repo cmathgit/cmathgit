@@ -3,8 +3,6 @@ GNU Bourne-Again SHell Programmer, Oracle Cloud Developer, Mathematics Tutor, an
 
 ***
 
-TESTING
-
 # Recent/Upcoming Projects & Notable Accomplishments
 
 ## **OpenWebUI Deployment & Local Language Model Integration**
