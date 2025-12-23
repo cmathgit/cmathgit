@@ -56,6 +56,13 @@ Design and support Integration solutions for Oracle Fusion Cloud Applications Su
    - Ingested budget data from via SFTP, staged in ATP, enriched through ERP SOAP services, and submitted using FBDI for Oracle Project Control. 
    - Implemented CREATE/UPDATE/DELETE logic per Oracle standards. 
 
+ #### **REST API Upgrade**: Modernized Capital Budget Integration: FBDI to REST Migration
+   - Architecture & Design: Re-architected the legacy file-based (FBDI) integration to a real-time, API-first solution using Oracle Integration Cloud (OIC) and Oracle ATP to process capital budget data from an external Healthcare EPM system.
+   - Data Ingestion & Staging: Developed OIC orchestrations to ingest pipe-delimited data via SFTP, parsing and staging records into uniquely tailored ATP database tables for validation and enrichment.
+   - REST API Implementation: Replaced batch CSV processing with dynamic JSON payload construction, leveraging the Projects (/projects) REST endpoint to manage project headers and the Project Budgets (/projectBudgets) endpoint to push financial plans.
+   - Logic & Orchestration: Implemented logic to distinguish between new and existing records, dynamically executing POST (Create) or PATCH (Update) requests against the Fusion endpoints, replacing the need for separate Create/Update/Delete FBDI control files.
+   - Outcome: Achieved immediate transaction feedback and validation by moving from asynchronous import jobs to synchronous REST API calls, significantly reducing error resolution time for the Project Control team.
+
 #### Planned Enhancement(s): [Oracle Generative AI Implementation](https://docs.oracle.com/en-us/iaas/Content/generative-ai/overview.htm)
    - When budget line items are "Rejected" by Oracle ERP due to insufficient funds, a [Pretrained Foundational Model Meta Llama 3.1 70B](https://docs.oracle.com/en-us/iaas/Content/generative-ai/meta-models.htm) model analyzes the rejection error and the original project proposal. It then auto-generates a "Budget Adjustment Request" email for the project manager, explaining exactly how much to reduce or reallocate to meet the cap, streamlining the approval loop.
    - Before creating a new Capital Project in ERP, the system uses [Oracle AI Vector Search](https://docs.oracle.com/en/database/oracle/oracle-database/26/nfcoa/vector-data-type.html) to compare the incoming project description against 5 years of historical projects. It alerts Finance if a duplicate or highly similar project already exists (e.g., "MRI Machine Upgrade 2024" vs. "Radiology Equipment Refresh"), preventing double-booking of capital funds.
