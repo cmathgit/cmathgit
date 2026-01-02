@@ -19,7 +19,40 @@ Maintaining and expanding the OpenWebUI platform for Generative AI web integrati
 ## **Oracle Integration Cloud & Oracle Cloud Infrastructure Optimization**
 Design and support Integration solutions for Oracle Fusion Cloud Applications Suite—including Enterprise Resource Planning (ERP), Supply Chain & Manufacturing (SCM), and Human Capital Management (HCM)—via Oracle Integration Cloud (OIC). These integrations utilize various tech stacks, programming languages, connections, and tools with secure access to the organization’s ERP system and cloud databases. Technologies include: SFTP, SOAP, REST, SQLcl, ATP Databases, BI Publisher, PL/SQL, Java, and XML Schemas. Delivered multiple enterprise-grade solutions in Oracle Integration Cloud (OIC) and Oracle Cloud Infrastructure (OCI) integrating external healthcare systems with Oracle Fusion Cloud ERP. These projects showcase advanced skills in cloud-native integration, data staging, REST/SOAP APIs, and cost-efficient infrastructure management. 
 
-### 1. **Invoice Order Integration**  
+### 1. **Capital Budget Integration** 
+   - Designed to process capital budget data transferred from an external Healthcare EPM system into the Oracle ERP system.   
+   - Data received as pipe delimited files via SFTP and processing using Oracle FBDI for Project Management.   
+   - Data staged using ATP newly created and uniquely tailored database tables, enriched via SOAP requests to the ERP, and formatted into an FBDI template of control files for the Import Projects and Project Budgets ESS jobs in Oracle Fusion Project Control.  
+   - Data separated into CREATE, UPDATE, and DELETE control files as per Oracle recommendations. 
+   - Ingested budget data via SFTP, staged in ATP, enriched through ERP SOAP services, and submitted using FBDI templates for Oracle Project and Project Budget ESS jobs. 
+   - Implemented CREATE/UPDATE/DELETE logic per Oracle standards. 
+   - Retrieve, validate, and archive extract files and handle duplicate and no file errors via SFTP, ATP Database, and Oracle Integration Cloud (OIC) orchestrations
+   - Implement Fault Handling and Error Recovery for SFTP, ATP Databases Connections, REST APIs, and SOAP Services.
+   - Stage and validate Project, Task, and Budget records into ATP tables.
+   - Enrich Project records with additional data by designing BI Publisher Reports to retrieve Project Manager EIN using provided AD Usernames via SOAP Services which is required for Import Projects File-Based Data Import (FBDI) in Oracle Fusion Project Management.
+   - Handle Version Control for existing Project Budgets and Project Tasks.
+   - Handle Middleware Errors due to invalid Project Manager AD Username, invalid datatype formatting, and null values. 
+   - Using staged data, Prepare and Curate FBDI Control Files according to XLSM Templates for ESS Jobs Import Projects and Import Project Budgets in Oracle Fusion Project Management.
+   - Prepare and Curate ESS Job Definitions for Oracle Fusion Project Management.
+   - Package and Submit FBDI Control Files to Oracle Fusion via SOAP Services.
+   - Monitor and Manage ESS Jobs via SOAP Services. Implement wait and retry logic for ESS Jobs. Confirm job completion and status.
+   - Prepare and curate Middleware Error Reports and delivered Cloud Error Reports for both Import Projects and Import Project Budgets ESS Jobs.
+   - Package and archive error reports and integration results.
+   - Trigger notification via email of integration completion results and or errors
+
+ #### **REST API Upgrade**: Modernized Capital Budget Integration: FBDI to REST Migration
+   - Architecture & Design: Re-architected the legacy file-based (FBDI) integration to a real-time, API-first solution using Oracle Integration Cloud (OIC) and Oracle ATP to process capital budget data from an external Healthcare EPM system.
+   - Data Ingestion & Staging: Developed OIC orchestrations to ingest pipe-delimited data via SFTP, parsing and staging records into uniquely tailored ATP database tables for validation and enrichment.
+   - REST API Implementation: Replaced batch CSV processing with dynamic JSON payload construction, leveraging the Projects (/projects) REST endpoint to manage project headers and the Project Budgets (/projectBudgets) endpoint to push financial plans.
+   - Logic & Orchestration: Implemented logic to distinguish between new and existing records, dynamically executing POST (Create) or PATCH (Update) requests against the Fusion endpoints, replacing the need for separate Create/Update/Delete FBDI control files.
+   - Outcome: Achieved immediate transaction feedback and validation by moving from asynchronous import jobs to synchronous REST API calls, significantly reducing error resolution time for the Project Control team.
+
+#### Planned Enhancement(s): [Oracle Generative AI Implementation](https://docs.oracle.com/en-us/iaas/Content/generative-ai/overview.htm)
+   - When budget line items are "Rejected" by Oracle ERP due to insufficient funds, a [Pretrained Foundational Model Meta Llama 3.1 70B](https://docs.oracle.com/en-us/iaas/Content/generative-ai/meta-models.htm) model analyzes the rejection error and the original project proposal. It then auto-generates a "Budget Adjustment Request" email for the project manager, explaining exactly how much to reduce or reallocate to meet the cap, streamlining the approval loop.
+   - Before creating a new Capital Project in ERP, the system uses [Oracle AI Vector Search](https://docs.oracle.com/en/database/oracle/oracle-database/26/nfcoa/vector-data-type.html) to compare the incoming project description against 5 years of historical projects. It alerts Finance if a duplicate or highly similar project already exists (e.g., "MRI Machine Upgrade 2024" vs. "Radiology Equipment Refresh"), preventing double-booking of capital funds.
+   - Build a "Budget Chat" interface for executives using [Pretrained Foundational Model xAI Grok 3](https://docs.oracle.com/en-us/iaas/Content/generative-ai/xai-models.htm) since it excels at enterprise use cases such as data extraction, coding, and summarizing text, and has a deep domain knowledge in finance, healthcare, law, and science. Users can ask, "Show me all capital projects over $50k in Cardiology that are pending approval," and the model translates this natural language into precise SQL queries against the ATP staging tables, returning real-time results without IT intervention.
+
+### 2. **Invoice Order Integration**  
    - Designed to process and submit invoice order data transferred from an external Healthcare Supply Chain Management system into the Oracle ERP system. 
    - Data received as a zipped container via SFTP and imported using RESTful services. 
    - The container includes PDF attachments and a schema file listing filenames and associated invoice numbers. 
@@ -35,7 +68,7 @@ Design and support Integration solutions for Oracle Fusion Cloud Applications Su
    - Utilize a fine-tuned [Imported Model Llama-4-Maverick-17B-128E-Instruct-FP8](https://docs.oracle.com/en-us/iaas/Content/generative-ai/imported-meta-models.htm) model to analyze extracted invoice line items against historical pricing data stored in ATP. The model flags "hallucinated" or mismatched prices (e.g., a 500% variance in surgical supply costs) before the invoice is posted to Oracle ERP Financials, adding a layer of fraud detection.
    - Use OCI Generative AI Embeddings to convert invoice descriptions into vectors. When a new invoice arrives with an ambiguous "Service Description," the system queries the vector database to find the most similar past invoices and automatically assigns the correct General Ledger (GL) code with 95% accuracy.
 
-### 2. **OCI PaaS Optimization Project**  
+### 3. **OCI PaaS Optimization Project**  
    - Reduced infrastructure costs by optimizing the OCI PaaS configuration for lower environments.  
    - Minimizing uptime of non-production components. 
    - Reducing the number of active OIC Connectivity Agents in Test environments. 
@@ -48,26 +81,6 @@ Design and support Integration solutions for Oracle Fusion Cloud Applications Su
    - Deploy a [Pretrained Foundational Model Gemini-2.5-Pro](https://docs.oracle.com/en-us/iaas/Content/generative-ai/google-models.htm) powered agent to digest massive OCI Audit Logs during off-hours. Instead of just shutting down instances, the agent generates a "Daily Cost & Usage Report" that summarizes why specific compute instances spun up (e.g., "Auto-scaling triggered by 2 AM backup job"), providing granular visibility into cost drivers.
    - Implement a predictive model using [Pretrained Foundational Model Cohere Embed 4](https://docs.oracle.com/en-us/iaas/Content/generative-ai/cohere-models.htm) to analyze historical CPU/Memory utilization patterns. The system now proactively warms up OIC Connectivity Agents 15 minutes before predicted traffic spikes (e.g., month-end close), rather than reacting to load, balancing cost savings with performance.
 
-### 3. **Capital Budget Integration** 
-   - Designed to process capital budget data transferred from an external Healthcare EPM system into the Oracle ERP system.   
-   - Data received as a pipe delimited file via SFTP and processes using Oracle FBDI for Project Management.   
-   - Data staged using ATP newly created and uniquely tailored database tables, enriched via SOAP requests to the ERP, and formatted into an FBDI file for the Import Project Budgets job Oracle Fusion Project Control.  
-   - Data separated into CREATE, UPDATE, and DELETE control files as per Oracle recommendations. 
-   - Ingested budget data from via SFTP, staged in ATP, enriched through ERP SOAP services, and submitted using FBDI for Oracle Project Control. 
-   - Implemented CREATE/UPDATE/DELETE logic per Oracle standards. 
-
- #### **REST API Upgrade**: Modernized Capital Budget Integration: FBDI to REST Migration
-   - Architecture & Design: Re-architected the legacy file-based (FBDI) integration to a real-time, API-first solution using Oracle Integration Cloud (OIC) and Oracle ATP to process capital budget data from an external Healthcare EPM system.
-   - Data Ingestion & Staging: Developed OIC orchestrations to ingest pipe-delimited data via SFTP, parsing and staging records into uniquely tailored ATP database tables for validation and enrichment.
-   - REST API Implementation: Replaced batch CSV processing with dynamic JSON payload construction, leveraging the Projects (/projects) REST endpoint to manage project headers and the Project Budgets (/projectBudgets) endpoint to push financial plans.
-   - Logic & Orchestration: Implemented logic to distinguish between new and existing records, dynamically executing POST (Create) or PATCH (Update) requests against the Fusion endpoints, replacing the need for separate Create/Update/Delete FBDI control files.
-   - Outcome: Achieved immediate transaction feedback and validation by moving from asynchronous import jobs to synchronous REST API calls, significantly reducing error resolution time for the Project Control team.
-
-#### Planned Enhancement(s): [Oracle Generative AI Implementation](https://docs.oracle.com/en-us/iaas/Content/generative-ai/overview.htm)
-   - When budget line items are "Rejected" by Oracle ERP due to insufficient funds, a [Pretrained Foundational Model Meta Llama 3.1 70B](https://docs.oracle.com/en-us/iaas/Content/generative-ai/meta-models.htm) model analyzes the rejection error and the original project proposal. It then auto-generates a "Budget Adjustment Request" email for the project manager, explaining exactly how much to reduce or reallocate to meet the cap, streamlining the approval loop.
-   - Before creating a new Capital Project in ERP, the system uses [Oracle AI Vector Search](https://docs.oracle.com/en/database/oracle/oracle-database/26/nfcoa/vector-data-type.html) to compare the incoming project description against 5 years of historical projects. It alerts Finance if a duplicate or highly similar project already exists (e.g., "MRI Machine Upgrade 2024" vs. "Radiology Equipment Refresh"), preventing double-booking of capital funds.
-   - Build a "Budget Chat" interface for executives using [Pretrained Foundational Model xAI Grok 3](https://docs.oracle.com/en-us/iaas/Content/generative-ai/xai-models.htm) since it excels at enterprise use cases such as data extraction, coding, and summarizing text, and has a deep domain knowledge in finance, healthcare, law, and science. Users can ask, "Show me all capital projects over $50k in Cardiology that are pending approval," and the model translates this natural language into precise SQL queries against the ATP staging tables, returning real-time results without IT intervention.
-
 ### 4. **ASN Receiving Integration**  
    - Designed to process Advanced Shipment Notice (ASN) Receiving data from an external system into the Oracle ERP system. 
    - This integration ensures accurate and timely receipt of goods data into the ERP system, supporting supply chain operations. 
@@ -77,7 +90,6 @@ Design and support Integration solutions for Oracle Fusion Cloud Applications Su
    - Integrate [Pretrained Foundational Model Gemini-2.5-Flash](https://docs.oracle.com/en-us/iaas/Content/generative-ai/google-models.htm) to cross-reference incoming ASN vendor locations with real-time global news feeds. If an ASN originates from a region with active disruptions (e.g., "Port Strike in LA" or "Severe Weather in Texas"), the system tags the receipt as "High Risk for Delay" in Oracle ERP, enabling proactive inventory planning.
    - When incoming ASNs use vendor-specific part numbers that don't perfectly match Oracle Item Masters, [Pretrained Foundational Model Cohere Rerank 3.5](https://docs.oracle.com/en-us/iaas/Content/generative-ai/cohere-models.htm) takes the vendor's description and ranks the top 5 most likely internal Item IDs. This allows the integration to auto-correct minor naming discrepancies (e.g., "Srgcl Mask" vs. "Mask, Surgical") without human review.
    - Develope a specialized agent using [Imported Model Qwen3-14B](https://docs.oracle.com/en-us/iaas/Content/generative-ai/imported-alibaba-models.htm) that monitors the "Receipt Advice" interface. When a quantity discrepancy occurs (e.g., ASN says 100, Dock received 90), the agent auto-drafts a formatted claim email to the vendor referencing the specific PO and ASN line, attaching the discrepancy report instantly.
-
 
 ### 5. **Surgical Case Management & Clinical Procurement Integration**
    - Designed to process and synchronize requisition data from the External EMR System platform into Oracle ERP and extract item master and PO return data from ERP to External EMR System.
