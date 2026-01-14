@@ -23,15 +23,15 @@ Design and support Integration solutions for Oracle Fusion Cloud Applications Su
    - Designed to process capital budget data transferred from an external Healthcare EPM system into the Oracle ERP system.   
    - Data received as pipe delimited files via SFTP and processing using Oracle FBDI for Project Management.   
    - Data staged using ATP newly created and uniquely tailored database tables, enriched via SOAP requests to the ERP, and formatted into an FBDI template of control files for the Import Projects and Project Budgets ESS jobs in Oracle Fusion Project Control.  
-   - Data separated into CREATE, UPDATE, and DELETE control files as per Oracle recommendations. 
    - Ingested budget data via SFTP, staged in ATP, enriched through ERP SOAP services, and submitted using FBDI templates for Oracle Project and Project Budget ESS jobs. 
    - Implemented CREATE/UPDATE/DELETE logic per Oracle standards. 
    - Retrieve, validate, and archive extract files and handle duplicate and no file errors via SFTP, ATP Database, and Oracle Integration Cloud (OIC) orchestrations
    - Implement Fault Handling and Error Recovery for SFTP, ATP Databases Connections, REST APIs, and SOAP Services.
    - Stage and validate Project, Task, and Budget records into ATP tables.
    - Enrich Project records with additional data by designing BI Publisher Reports to retrieve Project Manager EIN using provided AD Usernames via SOAP Services which is required for Import Projects File-Based Data Import (FBDI) in Oracle Fusion Project Management.
+   - Enrich Project records with additional data by designing BI Publisher Reports to retrieve Department Names using provided org code and cost center via SOAP Services which is required for Import Projects File-Based Data Import (FBDI) in Oracle Fusion Project Management.
    - Handle Version Control for existing Project Budgets and Project Tasks.
-   - Handle Middleware Errors due to invalid Project Manager AD Username, invalid datatype formatting, and null values. 
+   - Handle Middleware Errors due to invalid Project Manager AD Username or invalid Department Codes, invalid datatype formatting, and null values. 
    - Using staged data, Prepare and Curate FBDI Control Files according to XLSM Templates for ESS Jobs Import Projects and Import Project Budgets in Oracle Fusion Project Management.
    - Prepare and Curate ESS Job Definitions for Oracle Fusion Project Management.
    - Package and Submit FBDI Control Files to Oracle Fusion via SOAP Services.
