@@ -7,7 +7,9 @@ GNU Bourne-Again SHell Programmer, Oracle Cloud Developer, Mathematics Tutor, an
 
 ## **OpenWebUI Deployment & Local Language Model Integration**
 Maintaining and expanding the OpenWebUI platform for Generative AI web integration, locally hosted small language models (SLMs) and cloud-based large language models (LLMs) via a unified architecture. See my preferred DIY Language Model-Stack(s) below which include RAG/Embedding models, web search tools, OCR, and reranking models. Key components include: 
-- **Models/Tools**: Integrated diverse models (e.g., GLM, Mistral, Perplexity, GGUF) and tools (llama.cpp, Ollama, LMStudio, LangChain) with custom middleware.  
+- **Tools**: Integrated various tools, filters, and functions: [Groq Compound Systems Wolfram Alpha integration](https://console.groq.com/docs/tool-use/built-in-tools/wolfram-alpha) filtering (inject compound_custom parameters into the request payload), [Wolfram Alpha LLM API](https://products.wolframalpha.com/llm-api/documentation) tool call, KJV Bible verse retrieval using [Bible-kjv JSON library](https://github.com/aruljohn/Bible-kjv), and Verse of the Day for any Bible translation/version using [BibleGateway Web-Service](https://www.biblegateway.com/votd/get/?format=JSON&version=9)
+
+- **Models**: Integrated diverse models (e.g., GLM, Mistral, Perplexity, GGUF) and tools (llama.cpp, Ollama, LMStudio, LangChain) with custom middleware.  
 - **Stack**: Python (FastAPI, REST), cURL, WebSocket streaming, async/await, Docker, and Python venv/uv.  
 - **Features**: Retrieval-augmented generation (RAG), embedding, reranking pipelines, Model Context Protocol (MCP) servers, multi-agent systems, and privacy-preserving protocols like Role-Pseudonymous Prompting (RPP).  
 - **Hardware Preferences**:  
