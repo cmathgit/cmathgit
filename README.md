@@ -7,7 +7,7 @@ GNU Bourne-Again SHell Programmer, Oracle Cloud Developer, Mathematics Tutor, an
 
 ## Quick Access
 
-* [Capital Budget Oracle Integration (FBDI & REST)](#capital-budget-integration)
+* [Capital Budget Oracle Integration (FBDI & REST)](###capital-budget-integration)
 * [Invoice Order Oracle Integration](#invoice-order-integration)
 * [Oracle Cloud Infrastructure PaaS Optimization](#oci-paas-optimization)
 * [ASN Receiving Oracle Integration](#asn-receiving-integration)
@@ -30,7 +30,7 @@ Maintaining and expanding the OpenWebUI platform for Generative AI web integrati
 ## **Oracle Integration Cloud & Oracle Cloud Infrastructure Optimization**
 Design and support Integration solutions for Oracle Fusion Cloud Applications Suite—including Enterprise Resource Planning (ERP), Supply Chain & Manufacturing (SCM), and Human Capital Management (HCM)—via Oracle Integration Cloud (OIC). These integrations utilize various tech stacks, programming languages, connections, and tools with secure access to the organization’s ERP system and cloud databases. Technologies include: SFTP, SOAP, REST, SQLcl, ATP Databases, BI Publisher, PL/SQL, Java, and XML Schemas. Delivered multiple enterprise-grade solutions in Oracle Integration Cloud (OIC) and Oracle Cloud Infrastructure (OCI) integrating external healthcare systems with Oracle Fusion Cloud ERP. These projects showcase advanced skills in cloud-native integration, data staging, REST/SOAP APIs, and cost-efficient infrastructure management. 
 
-### 1. **Capital Budget Integration** {#capital-budget-integration}
+### **Capital Budget Integration** {#capital-budget-integration}
    - Designed to process capital budget data transferred from an external Healthcare EPM system into the Oracle ERP system.   
    - Data received as pipe delimited files via SFTP and processing using Oracle FBDI for Project Management.   
    - Data staged using ATP newly created and uniquely tailored database tables, enriched via SOAP requests to the ERP, and formatted into an FBDI template of control files for the Import Projects and Project Budgets ESS jobs in Oracle Fusion Project Control.  
