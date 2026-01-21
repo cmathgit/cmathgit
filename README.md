@@ -5,15 +5,6 @@ GNU Bourne-Again SHell Programmer, Oracle Cloud Developer, Mathematics Tutor, an
 
 # Recent Projects & Notable Accomplishments
 
-## Quick Access
-
-* [Capital Budget Oracle Integration (FBDI & REST)](#capital-budget-integration)
-* [Invoice Order Oracle Integration](#invoice-order-integration)
-* [Oracle Cloud Infrastructure PaaS Optimization](#oci-paas-optimization)
-* [ASN Receiving Oracle Integration](#asn-receiving-integration)
-* [Surgical Case Management & Clinical Procurement Oracle Integration](#surgical-case-management)
-* [OpenWebUI LLM Integration](#open-webui-llm-deployment)
-
 ## **OpenWebUI Deployment & Local Language Model Integration**
 Maintaining and expanding the OpenWebUI platform for Generative AI web integration, locally hosted small language models (SLMs) and cloud-based large language models (LLMs) via a unified architecture. See my preferred DIY Language Model-Stack(s) below which include RAG/Embedding models, web search tools, OCR, and reranking models. Key components include: 
 - **Tools**: Integrated various tools, filters, and functions: [Groq Compound Systems Wolfram Alpha integration](https://console.groq.com/docs/tool-use/built-in-tools/wolfram-alpha) filtering (inject compound_custom parameters into the request payload), [Wolfram Alpha LLM API](https://products.wolframalpha.com/llm-api/documentation) tool call, KJV Bible verse retrieval using [Bible-kjv JSON library](https://github.com/aruljohn/Bible-kjv), and Verse of the Day for any Bible translation/version using [BibleGateway Web-Service](https://www.biblegateway.com/votd/get/?format=JSON&version=9)
@@ -30,7 +21,7 @@ Maintaining and expanding the OpenWebUI platform for Generative AI web integrati
 ## **Oracle Integration Cloud & Oracle Cloud Infrastructure Optimization**
 Design and support Integration solutions for Oracle Fusion Cloud Applications Suite—including Enterprise Resource Planning (ERP), Supply Chain & Manufacturing (SCM), and Human Capital Management (HCM)—via Oracle Integration Cloud (OIC). These integrations utilize various tech stacks, programming languages, connections, and tools with secure access to the organization’s ERP system and cloud databases. Technologies include: SFTP, SOAP, REST, SQLcl, ATP Databases, BI Publisher, PL/SQL, Java, and XML Schemas. Delivered multiple enterprise-grade solutions in Oracle Integration Cloud (OIC) and Oracle Cloud Infrastructure (OCI) integrating external healthcare systems with Oracle Fusion Cloud ERP. These projects showcase advanced skills in cloud-native integration, data staging, REST/SOAP APIs, and cost-efficient infrastructure management. 
 
-### **Capital Budget Integration** {capital-budget-integration}
+### 1. **Capital Budget Integration** {capital-budget-integration}
    - Designed to process capital budget data transferred from an external Healthcare EPM system into the Oracle ERP system.   
    - Data received as pipe delimited files via SFTP and processing using Oracle FBDI for Project Management.   
    - Data staged using ATP newly created and uniquely tailored database tables, enriched via SOAP requests to the ERP, and formatted into an FBDI template of control files for the Import Projects and Project Budgets ESS jobs in Oracle Fusion Project Control.  
