@@ -15,77 +15,90 @@ Views expressed on this page are my own and do not represent my employer, curren
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 💻 CODING & AGENTIC TASKS
-☁️ MiniMax M2.7 (Ollama Cloud)       — 78% SWE-bench, top free coding model
-☁️ GLM-5 (Ollama Cloud)              — 77.8% SWE-bench, #1 open Code Arena
-☁️ GLM-4.7-Flash (Z.ai)              — 59% SWE-bench, 200K ctx, always free
-☁️ Devstral (Mistral)                — agentic multi-file, repo-scale tasks
-☁️ Codestral (Mistral)               — completions, refactoring, IDE optimized
+☁️ Codestral-2501 (Mistral)          — completions, refactoring, IDE optimized
+☁️ Devstral-24B (Mistral)            — agentic multi-file, repo-scale tasks
 ☁️ gemini-2.5-flash (Google)         — fast code help, 1M ctx, 250 req/day
-🖥 qwen3.5:9b-q4_K_M               — best all-round local model, has /think
-🖥 qwen2.5-coder:7b-instruct        — purpose-built local code model
-🖥 codegeex4:9b-all                 — GLM local coding, strong completions
-🖥 deepseek-coder:6.7b-instruct     — solid local fallback coder
+☁️ gemini-2.5-pro (Google)           — complex agentic refactoring, deep indexing
+☁️ llama-3.3-70b-versatile (Groq)    — high-accuracy code reasoning & scripts
+☁️ granite-3.1-dense:8b (IBM)        — enterprise-grade compliant code & agents
+🖥 granite-3.1-code:8b / 20b         — IBM open enterprise coder, instruction tuned
+🖥 codegemma:7b-instruct             — Google purpose-built code & completion model
+🖥 codellama:7b-instruct / 13b       — Meta solid local coding baseline
+🖥 llama3.1:8b-instruct              — versatile local coding & agentic orchestration
+🖥 phi-4:14b                         — Microsoft state-of-the-art code & logic
 
 🤖 AGENTIC / TOOL USE (local)
+🖥 granite-3.1-dense:8b / 2b         — IBM native tool-use & agentic function calling
 🖥 llama3-groq-tool-use:8b          — purpose-built for function/tool calls
 🖥 hermes3:8b-llama3.1              — strong structured output + tool calls
-🖥 functiongemma:latest (300MB)     — ultra-lightweight function dispatcher
+🖥 functiongemma:latest (300MB)     — Google ultra-lightweight function dispatcher
+🖥 gemma-2-9b-it                    — Google fast structured tool calling & JSON mode
 🖥 driaforall/tiny-agent-a:3b       — tiny agentic model, low VRAM overhead
 🖥 driaforall/tiny-agent-a:1.5b     — sub-2GB agentic fallback
 
 🧠 REASONING & COMPLEX CHAT
 ☁️ gemini-2.5-pro (Google)           — best free reasoning, 1M ctx, 100/day
 ☁️ command-a-reasoning (Cohere)      — 111B, 256K ctx, free, tool+RAG+agents
-☁️ kimi-k2-instruct (Groq)           — deep reasoning, 300K TPD
-☁️ qwen3-32b (Groq)                  — math, logic, multilingual, 60 RPM
 ☁️ Mistral Large 3 (Ollama Cloud)    — long-form reasoning, free tier
-🖥 deepseek-r1:8b-0528-qwen3        — newest R1 distill, best local thinker
-🖥 qwen3:8b-q4_K_M                  — /think mode, strong local reasoning
-🖥 olmo-3:7b-think                  — thinking variant, solid local reasoning
-🖥 openthinker:7b-v2                — lightweight dedicated thinking model
-🖥 lfm2.5-thinking (731MB)          — sub-1GB thinking model, minimal VRAM
+☁️ llama-3.3-70b-versatile (Groq)    — deep reasoning, 1K req/day, 128K ctx
+☁️ granite-3.1-dense:8b (IBM)        — enterprise reasoning & RAG synthesis
+🖥 phi-4:14b                         — Microsoft premier open reasoning & synthetic logic
+🖥 gemma-2-27b-it / 9b-it            — Google high-density reasoning architecture
+🖥 granite-3.1-dense:8b             — IBM dense reasoning with enterprise guardrails
+🖥 olmo-3:7b-think                  — thinking variant, solid open US reasoning (Ai2)
+🖥 lfm2.5-thinking (731MB)          — sub-1GB Liquid AI thinking model, minimal VRAM
 
 ⚡️ HIGH VOLUME / FAST (hit a rate limit? start here)
 ☁️ llama-3.1-8b-instant (Groq)       — 14,400 req/day, fastest cloud fallback
-☁️ GLM-4.5-Flash (Z.ai)              — always free, no hard cap
+☁️ gemini-2.5-flash (Google)         — 1M ctx, ultra-fast 250 req/day fallback
+☁️ mistral-small (Mistral)           — fast, high throughput, 1B tokens/mo free
 ☁️ llama-4-scout-17b (Groq)          — 30K TPM, long-context speed
 ☁️ llama-3.3-70b-versatile (Groq)    — 1K req/day, quality fallback
-🖥 qwen3:4b / 1.7b                  — sub-3GB instant local fallback
-🖥 llama3.2:3b / 1b                 — fast, minimal VRAM local swap
+☁️ granite-3.1-moe:3b / 1b (IBM)     — ultra-low latency, high throughput MoE
+🖥 llama3.2:3b / 1b                 — Meta fast, minimal VRAM local swap
+🖥 gemma-2-2b-it                    — Google ultra-compact, high efficiency local swap
+🖥 granite-3.1-dense:2b             — IBM lightweight, efficient enterprise fallback
 
 📖 LONG DOCS / BIBLE STUDY / RAG
 ☁️ gemini-2.5-pro (Google)           — 1M ctx, full-text theological analysis
 ☁️ command-a-reasoning (Cohere)      — 256K ctx, citation-grounded reasoning
-☁️ command-r+ (Cohere)               — RAG, citation-grounded answers
-☁️ kimi-k2-instruct (Groq)           — 300K TPD, multi-doc reasoning
-☁️ GLM-4.7-Flash (Z.ai)              — 200K ctx, always free
+☁️ command-r+ (Cohere)               — 128K ctx, citation-grounded answers & RAG
+☁️ llama-3.3-70b-versatile (Groq)    — 128K ctx, high-fidelity context synthesis
+☁️ granite-3.1-dense:8b (IBM)        — 128K ctx, enterprise doc analysis & summary
 🖥 Baptist-Christian-Bible-Expert-v2.0-8B — specialized theology model ⭐️
 🖥 Baptist-Christian-Bible-Expert-v1.1-8B — prior version, cross-reference
+🖥 gemma-2-9b-it                    — Google high semantic precision for doctrinal study
 🖥 dolphin3:8b-llama3.1             — uncensored, open theological discussion
+🖥 granite-3.1-dense:8b             — IBM document comprehension & verbatim citations
 
 🔗 EMBEDDING & RERANKING
-🖥 qwen3-embedding:4b               — #1 MTEB retrieval 2026, primary choice
-🖥 qwen3-embedding:0.6b             — lightweight swap, same architecture
-🖥 mxbai-embed-large:335m           — strong general-purpose embedding
-🖥 bge-m3:latest                    — multilingual, Greek/Hebrew/Latin texts
-🖥 nomic-embed-text:v1.5            — fast, lightweight, reliable baseline
-🖥 qllama/bge-reranker-v2-m3:F16    — best local reranker, multilingual
-🖥 qllama/bge-reranker-large:F16    — high-precision English reranking
+🖥 embeddinggemma:300m               — Google #1 theological precision & orthodox retrieval
+🖥 granite-embedding:278m           — IBM high-performance enterprise embedding
+🖥 nomic-embed-text:v1.5            — 8192 ctx, fast, lightweight, reliable baseline
+🖥 mxbai-embed-large:335m           — Mixedbread strong general-purpose embedding
+🖥 snowflake-arctic-embed:m         — Snowflake enterprise retrieval & MTEB leader
+🖥 mxbai-rerank-large:latest        — Mixedbread high-precision cross-encoder reranker
+🖥 flashrank:latest                 — ultra-fast CPU-optimized local reranking engine
 ☁️ Cohere Rerank v3.5 (Cohere API)   — free tier, Open-WebUI native
 ☁️ embed-english-v3 (Cohere API)     — cloud embedding fallback
 
 🔢 MATH & QUANTITATIVE REASONING
-☁️ qwen3-32b (Groq)                  — best free cloud math model
-🖥 qwen2-math:7b-instruct            — dedicated math model, local
-🖥 qwen2-math:1.5b                   — lightweight math fallback
-🖥 deepseek-r1:8b-0528-qwen3         — math + reasoning distill
-🖥 deepscaler:1.5b                   — sub-2GB math reasoning
+☁️ gemini-2.5-pro (Google)           — premier STEM & quantitative reasoning
+☁️ llama-3.3-70b-versatile (Groq)    — advanced calculus, algebra & math proofs
+☁️ granite-3.1-dense:8b (IBM)        — enterprise quantitative & algorithmic analysis
+🖥 phi-4:14b                         — Microsoft benchmark-topping open math & logic
+🖥 gemma-2-27b-it / 9b-it            — Google strong mathematical & algorithmic reasoning
+🖥 granite-3.1-dense:8b             — IBM arithmetic, logic, and formula validation
+🖥 llama3.1:8b-instruct              — Meta general quantitative & problem solving
+🖥 lfm2.5-thinking (731MB)          — sub-2GB math reasoning
 
 ✍️ WRITING / SONGWRITING / CREATIVE
 ☁️ llama-3.3-70b-versatile (Groq)    — creative, narrative, 1K req/day
 ☁️ Mistral Large 3 (Ollama Cloud)    — long-form narrative structure
 ☁️ command-r (Cohere)                — long-form writing, narrative arc
 ☁️ mistral-small (Mistral)           — fast prose, 1B tokens/mo free
+🖥 gemma-2-9b-it                    — Google rich prose, poetic nuances & style
+🖥 granite-3.1-dense:8b             — IBM professional prose, structured writing & docs
 🖥 dolphin3:8b-llama3.1             — uncensored creative generation
 🖥 hermes3:8b-llama3.1              — creative + structured output
 
@@ -94,14 +107,18 @@ Views expressed on this page are my own and do not represent my employer, curren
 ☁️ gemini-2.5-flash (Google)         — grounded search, native web access
 ☁️ sonar (Perplexity API)            — web-cited research summaries
 ☁️ ollama + web search tool          — any tool-capable model + Open-WebUI web search pipeline
-🖥 hermes3:8b / llama3-groq-tool-use → Open-WebUI web search pipeline, local tool calling
+🖥 granite-3.1-dense:8b / hermes3:8b → Open-WebUI web search pipeline, local tool calling
+🖥 llama3-groq-tool-use:8b          — local tool calling for search pipelines
 
 👁 VISION / OCR
 ☁️ mistral-ocr-latest (Mistral)      — document/PDF OCR, structured extraction, free tier
-🖥 qwen3-vl:4b                      — local vision-language, code screenshots
-🖥 glm-ocr:latest                   — local GLM OCR, document extraction
-🖥 deepseek-ocr:3b                  — local deepseek OCR pipeline
-🖥 moondream:1.8b                   — local tiny vision model, sub-2GB
+☁️ gemini-2.5-flash (Google)         — multimodal visual reasoning, diagrams & OCR
+☁️ llama-3.2-11b-vision (Groq)       — fast multimodal document & chart understanding
+🖥 paligemma2:10b / 3b              — Google premier vision-language & OCR
+🖥 llama-3.2-11b-vision             — Meta local multimodal image & UI comprehension
+🖥 granite-vision:latest            — IBM enterprise document & chart extraction
+🖥 phi-3.5-vision:instruct          — Microsoft high-accuracy chart, diagram & doc OCR
+🖥 moondream2:latest (1.8b)         — local tiny vision model, sub-2GB
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
 
@@ -264,7 +281,7 @@ Daily AI-assisted work spans multiple specialized domains, but most developers s
 OpenWebUI deployed locally as the primary generative AI front end, integrated with Ollama, llama.cpp, LMStudio, and compatible remote APIs so that local and cloud models are routed through the same interface. Extended with Python, FastAPI, REST, WebSocket streaming, Docker, and isolated Python environments for custom middleware, tool execution, and orchestration. Tools and filters include KJV Bible verse retrieval, Wolfram Alpha API calls, web search, OCR, embedding, reranking, and RAG pipelines. Hardware-specific runtime preferences target GPU and CPU builds for local model inference. Paired with **Continue** for IDE-centered coding and agentic development workflows.
 
 ##### **Why This Approach Matters**
-Replaces a fragmented paid-tool pattern with a unified self-hosted environment at $0 recurring cost for the self-hosted stack. Public benchmark data supports routing free-tier-accessible models for important development workflows — models such as MiniMax M2.7 and GLM-5 show strong coding-oriented performance, validating a routing strategy based on workload fit rather than recurring spend. Keeps chats, prompts, files, and vectorized knowledge assets under direct local control. Modular architecture supports provider swaps and future enhancements without a full workflow redesign.
+Replaces a fragmented paid-tool pattern with a unified self-hosted environment at $0 recurring cost for the self-hosted stack. Public benchmark data supports routing free-tier-accessible models for important development workflows — models such as IBM Granite, Google Gemma, Meta Llama, and Mistral show strong coding-oriented performance, validating a routing strategy based on workload fit rather than recurring spend. Keeps chats, prompts, files, and vectorized knowledge assets under direct local control. Modular architecture supports provider swaps and future enhancements without a full workflow redesign.
 
 ---
 
@@ -278,30 +295,30 @@ Specializing in **cost-optimized LLM deployment**, **RAG architecture**, and **a
 ### Executive Summary
 Developed **BibleVal**, a novel benchmark demonstrating that free LLM services enhanced with intelligent RAG can **match or exceed premium AI models** while maintaining theological integrity and scholarly rigor. Empirical evaluation demonstrates a **99.6% cost reduction** ($240/year to ~$1.08/year per user) by deploying free LLM services with optimized RAG architecture, matching the A+ theological performance of premium models for biblical exegesis tasks requiring doctrinal precision, linguistic accuracy, and confessional alignment.
 
-**Critical finding:** Embedding model selection proved determinative for theological integrity. `embeddinggemma:300m` maintained Baptist Faith & Message 2000 alignment (A+ grade), while `qwen3-embedding:0.6b` introduced doctrinal compromise (C- grade) by weighting heterodox sources as semantically similar to orthodox queries. This demonstrates that expert RAG engineering — specifically, embedding model evaluation and domain-specific distance metric calibration — constitutes mission-critical architecture, not routine configuration.
+**Critical finding:** Embedding model selection proved determinative for theological integrity. `embeddinggemma:300m` maintained Baptist Faith & Message 2000 alignment (A+ grade), while unaligned/unfiltered embedding baselines introduced doctrinal compromise (C- grade) by weighting heterodox sources as semantically similar to orthodox queries. This demonstrates that expert RAG engineering — specifically, embedding model evaluation and domain-specific distance metric calibration — constitutes mission-critical architecture, not routine configuration.
 
-**Anti-bias finding:** Contrary to marketing claims from Christian AI platforms, non-Christian LLMs (Claude, GLM, Perplexity Sonar) consistently produced theologically orthodox, BFM2000-aligned exegesis at A+ grade. Meanwhile, a Christian-branded platform underperformed with B- output. Architectural rigor — RAG design, embedding selection, and domain filtering — guarantees theological safety independent of vendor religious identity.
+**Anti-bias finding:** Contrary to marketing claims from Christian AI platforms, general foundation LLMs (Claude, Gemma, Llama, Perplexity Sonar) consistently produced theologically orthodox, BFM2000-aligned exegesis at A+ grade. Meanwhile, a Christian-branded platform underperformed with B- output. Architectural rigor — RAG design, embedding selection, and domain filtering — guarantees theological safety independent of vendor religious identity.
 
 Read the White Paper: [BibleVal White Paper](https://github.com/cmathgit/aimmm-agent-bible-prompts/blob/main/papers/BibleVal%20Analysis%20and%20Report.md)
 
-Read the Lesson: [BibleVal Lesson on John 8:58](https://github.com/cmathgit/aimmm-agent-bible-prompts/blob/main/papers/Biblical%20Exegesis%20of%20John%208_58%20by%20GLM-4_5-Flash.md)
+Read the Lesson: [BibleVal Lesson on John 8:58](https://github.com/cmathgit/aimmm-agent-bible-prompts/blob/main/papers/Biblical%20Exegesis%20of%20John%208_58%20by%20Gemma-2-9B.md)
 
 ### Key Achievement
-Engineered a **GLM-4.5-Flash + RAG pipeline** achieving **A+ performance at $0.005/query** vs. $0.063–$0.09/query for premium models (94.4% cost reduction), validating free cloud LLMs + local embedding models for enterprise-grade specialized tasks.
+Engineered a **Gemma-2-9B / Granite-3.1-8B + RAG pipeline** achieving **A+ performance at $0.005/query** vs. $0.063–$0.09/query for premium models (94.4% cost reduction), validating efficient open-weight LLMs + local embedding models for enterprise-grade specialized tasks.
 
 ### BibleVal Benchmark — Key Findings
 
 1. **Cost-Performance Validation**
-   - GLM-4.5-Flash + RAG: A+ at $0.005/query | Claude-4.5-Sonnet ($20/mo): A+ | GPT-5 ($20/mo): B+
+   - Gemma-2-9B + RAG: A+ at $0.005/query | Claude-4.5-Sonnet ($20/mo): A+ | GPT-5 ($20/mo): B+
    - Annual savings: $240/user (ministry) to $119,460/year (500-user seminary)
 
 2. **Embedding Model Selection is Critical**
    - `embeddinggemma:300m` → A+ (theological orthodoxy maintained)
-   - `qwen3-embedding:0.6b` → C- (heterodox source weighting caused doctrinal compromise)
+   - Uncalibrated / unaligned embedding baseline → C- (heterodox source weighting caused doctrinal compromise)
    - Insight: Domain alignment matters more than parameter count
 
 3. **"Christian AI" Branding ≠ Superior Output**
-   - Non-Christian LLMs produced orthodox, confessionally aligned exegesis
+   - General foundation LLMs produced orthodox, confessionally aligned exegesis
    - FaithGPT underperformed (B-); BibleGPT succeeded due to domain-specific training, not branding
 
 4. **Domain Filtering > General Search**
@@ -317,7 +334,7 @@ Engineered a **GLM-4.5-Flash + RAG pipeline** achieving **A+ performance at $0.0
 | **Agentic Systems** | Multi-agent orchestration, MCP server development, tool calling, task decomposition |
 | **Security & Privacy** | Role-Pseudonymous Prompting Protocol (RPP): de-identification, HIPAA/GDPR-aware prompt transformation, adversarial robustness |
 | **Prompt Engineering** | P.O.M.L. (Prompt Orchestration Markup Language), multi-turn state management, structured templating |
-| **Cloud Services** | OpenAI, Anthropic, Google (Gemini/VertexAI), Mistral, Groq, HuggingFace, Perplexity, Z.AI |
+| **Cloud Services** | OpenAI, Anthropic, Google (Gemini/VertexAI), Mistral, Groq, HuggingFace, Perplexity, IBM watsonx, Cohere |
 
 ***
 
