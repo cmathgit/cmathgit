@@ -4,10 +4,10 @@ GNU Bourne-Again SHell Programmer, Oracle Cloud Developer, Mathematics Tutor, an
 Views expressed on this page are my own and do not represent my employer, current nor former. This applies to any and all posts and interactions on this platform both past and future. Content not intended for SEO-Spam/spamdexing/AI Slop or otherwise — solely to spread the Gospel of Jesus Christ through musicianship, art, technology, and media. I receive zero compensation from any entity for any products or services shared — any perceived promotion material is a result of organic personal interest. Read the full disclaimer at [See Main Site](https://cmathgit.github.io)
 
 ## My Other Profiles:
-- [HuggingFace](https://huggingface.co/cmathhug)
-- [Ollama](https://ollama.com/cmathllm)
+- [W3Schools](https://www.w3profile.com/cmathw3/)
+- [Hugging Face](https://huggingface.co/cmathhug)
 - [OpenWebUI](https://openwebui.com/u/cmathopen)
-- [Postman](https://www.postman.com/cmathpost)
+- [Project Euler](https://projecteuler.net/profile/cmathsolve.png)
 
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
